@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.card-body{
+  transition: all 0.3s ease;
+
+}
+.card-body:hover{
+  transform: scale(1.02);
+}
+.start-100 {
+  left: 90%!important;
+  z-index: 10;
+}
