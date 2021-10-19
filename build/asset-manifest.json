@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/newsopia/static/css/main.072af327.chunk.css",
+    "main.js": "/newsopia/static/js/main.aa57ff6c.chunk.js",
+    "main.js.map": "/newsopia/static/js/main.aa57ff6c.chunk.js.map",
+    "runtime-main.js": "/newsopia/static/js/runtime-main.d5ed89b5.js",
+    "runtime-main.js.map": "/newsopia/static/js/runtime-main.d5ed89b5.js.map",
+    "static/js/2.fcaa9b44.chunk.js": "/newsopia/static/js/2.fcaa9b44.chunk.js",
+    "static/js/2.fcaa9b44.chunk.js.map": "/newsopia/static/js/2.fcaa9b44.chunk.js.map",
+    "static/js/3.00e83ba2.chunk.js": "/newsopia/static/js/3.00e83ba2.chunk.js",
+    "static/js/3.00e83ba2.chunk.js.map": "/newsopia/static/js/3.00e83ba2.chunk.js.map",
+    "index.html": "/newsopia/index.html",
+    "static/css/main.072af327.chunk.css.map": "/newsopia/static/css/main.072af327.chunk.css.map",
+    "static/js/2.fcaa9b44.chunk.js.LICENSE.txt": "/newsopia/static/js/2.fcaa9b44.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d5ed89b5.js",
+    "static/js/2.fcaa9b44.chunk.js",
+    "static/css/main.072af327.chunk.css",
+    "static/js/main.aa57ff6c.chunk.js"
+  ]
+}
