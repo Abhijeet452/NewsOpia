@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 // import PropTypes from 'prop-types'
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark fw-bold">
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">NewsOpia</Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

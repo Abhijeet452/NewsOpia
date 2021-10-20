@@ -46,6 +46,7 @@ export default class App extends Component {
               </Route>
             </Switch>
           </div>
+          {/* <Footer/> */}
         </Router>
       </>
     )
