@@ -66,7 +66,7 @@ export default class News extends Component {
         return (
             <>
                 <h1 className="text-center fw-bold">Top Headlines-{this.ToCapitalize(this.props.category)}</h1>
-                {this.state.PreLoader && <PreLoader />}
+                {/* {this.state.PreLoader && <PreLoader />} */}
                 <InfiniteScroll
                     dataLength={this.state.article.length}
                     next={this.fetchMoreData}
