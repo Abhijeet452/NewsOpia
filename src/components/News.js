@@ -82,7 +82,7 @@ export default class News extends Component {
                             {
                                 this.state.article.map((ele) => {
                                     return <div key={ele.url}>
-                                        <NewsItem title={ele.title === null ? '' : ele.title.slice(0, 45)} description={ele.description == null ? '' : ele.description} xurl={ele.url} imageUrl={ele.urlToImage === null ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wHc3OzKebPw9iQ9NMcjKRHSxIFKN2Ds2LQ&usqp=CAU" : ele.urlToImage} publishedAt={ele.publishedAt} author={ele.author} srcname={ele.source.name} />
+                                        <NewsItem title={ele.title === null ? '' : ele.title} description={ele.description == null ? '' : ele.description.slice(0,45)} xurl={ele.url} imageUrl={ele.urlToImage === null ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wHc3OzKebPw9iQ9NMcjKRHSxIFKN2Ds2LQ&usqp=CAU" : ele.urlToImage} publishedAt={ele.publishedAt} author={ele.author} srcname={ele.source.name} />
                                     </div>
                                 })
                             }

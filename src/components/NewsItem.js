@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 export default class NewsItem extends Component {
 
     render() {
-        let { title, description, xurl, imageUrl, publishedAt, author,srcname } = this.props;
-        let mystls = { cursor: 'pointer'}
+        let { title, description, xurl, imageUrl, publishedAt, author, srcname } = this.props;
+        let mystls = { cursor: 'pointer' }
         return (
             <div>
                 <div className="col">
@@ -17,7 +17,10 @@ export default class NewsItem extends Component {
                             <div className="card-body" style={mystls}>
                                 <h5 className="card-title fw-bold">{title}...</h5>
                                 <p className="card-text">{description}...</p>
-                                <p className="card-text text-success fw-bold">{author == null ? 'Unknown' : author}, {new Date(publishedAt).toGMTString()}...</p>
+                                <div class="card-footer">
+                                    {/* <small class="text-muted">Last updated 3 mins ago</small> */}
+                                    <small className="card-text text-secondary">{author == null ? 'Unknown' : author}, {new Date(publishedAt).toGMTString()}...</small>
+                                </div>
                             </div>
                         </a>
                     </div>
