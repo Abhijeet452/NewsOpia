@@ -1,5 +1,5 @@
 import './App.css';
-import React, { Component } from 'react'
+import React, {useState} from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
 import {
@@ -9,59 +9,56 @@ import {
 } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
 
-export default class App extends Component {
-  state = {
-    progress: 10
+const App=()=>{
+  // let apiKey=process.env.REACT_APP_API_URL;
+  // console.log(apiKey);
+  const [progress, setprogress] = useState(10);
+  const setProgress = (progress) => {
+    setprogress(progress);
   }
-  setProgress = (progress) => {
-    this.setState({ progress: progress });
-  }
-  render() {
     return (
       <>
         <Router>
           <Navbar />
           <div className="container my-4">
             <LoadingBar
-            height={3}
+              height={3}
               color='#f11946'
-              progress={this.state.progress}
+              progress={progress}
             />
             <Switch>
               <Route exact path="/">
-                <News setProgress={this.setProgress} key="general" category="general" />
+                <News setProgress={setProgress} key="general" category="general"/>
               </Route>
               <Route exact path="/general">
-                <News setProgress={this.setProgress} key="general" category="general" />
+                <News setProgress={setProgress} key="general" category="general"/>
               </Route>
               <Route exact path="/home">
-                <News setProgress={this.setProgress} key="general" category="general" />
+                <News setProgress={setProgress} key="general" category="general"/>
               </Route>
               <Route exact path="/business">
-                <News setProgress={this.setProgress} key="business" category="business" />
+                <News setProgress={setProgress} key="business" category="business"/>
               </Route>
               <Route exact path="/entertainment">
-                <News setProgress={this.setProgress} key="entertainment" category="entertainment" />
+                <News setProgress={setProgress} key="entertainment" category="entertainment"/>
               </Route>
               <Route exact path="/health">
-                <News setProgress={this.setProgress} key="health" category="health" />
+                <News setProgress={setProgress} key="health" category="health"/>
               </Route>
               <Route exact path="/science">
-                <News setProgress={this.setProgress} key="science" category="science" />
+                <News setProgress={setProgress} key="science" category="science"/>
               </Route>
               <Route exact path="/sports">
-                <News setProgress={this.setProgress} key="sports" category="sports" />
+                <News setProgress={setProgress} key="sports" category="sports"/>
               </Route>
               <Route exact path="/technology">
-                <News setProgress={this.setProgress} key="technology" category="technology" />
+                <News setProgress={setProgress} key="technology" category="technology"/>
               </Route>
             </Switch>
           </div>
-          {/* <Footer/> */}
         </Router>
       </>
     )
-  }
 }
 
-
+export default App;
